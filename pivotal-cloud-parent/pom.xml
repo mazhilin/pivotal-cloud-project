@@ -21,6 +21,13 @@
         <url>https://github.com/mazhilin/pivotal-cloud-project/pivotal-cloud-parent</url>
     </scm>
 
+
+    <modules>
+        <module>pivotal-cloud-boot</module>
+        <module>pivotal-cloud-starter</module>
+        <module>pivotal-cloud-toolkit</module>
+    </modules>
+
     <build>
         <plugins>
             <!--spring-boot-maven项目打包插件-->
