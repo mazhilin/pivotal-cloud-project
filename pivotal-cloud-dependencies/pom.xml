@@ -58,6 +58,20 @@
         <maven-war-plugin.verison>3.4.0</maven-war-plugin.verison>
         <maven-lombok-plugin.version>1.18.20.0</maven-lombok-plugin.version>
 
+        <!---Maven Flatten plugins -->
+        <maven-flatten-plugin.version>1.6.0</maven-flatten-plugin.version>
+        <maven-flatten-build.version>3.6.0</maven-flatten-build.version>
+        <maven-flatten-verisons.version>2.18.0</maven-flatten-verisons.version>
+        <maven-flatten.dependency>all</maven-flatten.dependency>
+        <maven-flatten.mode>resolveCiFriendliesOnly</maven-flatten.mode>
+        <maven-flatten.update>true</maven-flatten.update>
+        <maven-flatten.elements.parent>expand</maven-flatten.elements.parent>
+        <maven-flatten.elements.properties>keep</maven-flatten.elements.properties>
+        <maven-flatten.elements.dependencies>interpolate</maven-flatten.elements.dependencies>
+        <maven-flatten.elements.dependency>resolve</maven-flatten.elements.dependency>
+        <maven-flatten.elements.distributions>remove</maven-flatten.elements.distributions>
+        <maven-flatten.elements.repositories>remove</maven-flatten.elements.repositories>
+
         <!--Git Base plugins-->
         <git-commit.version>4.9.10</git-commit.version>
 
@@ -347,8 +361,73 @@
                     </executions>
                 </plugin>
 
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>flatten-maven-plugin</artifactId>
+                    <version>${maven-flatten-plugin.version}</version>
+                    <inherited>true</inherited>
+                    <configuration>
+                        <embedBuildProfileDependencies>false</embedBuildProfileDependencies>
+                        <flattenDependencyMode>${maven-flatten.dependency}</flattenDependencyMode>
+                        <flattenMode>${maven-flatten.mode}</flattenMode>
+                        <updatePomFile>${maven-flatten.update}</updatePomFile>
+                        <pomElements>
+                            <parent>${maven-flatten.elements.parent}</parent>
+                            <properties>${maven-flatten.elements.properties}</properties>
+                            <dependencyManagement>${maven-flatten.elements.dependencies}</dependencyManagement>
+                            <dependencies>${maven-flatten.elements.dependency}</dependencies>
+                            <distributionManagement>${maven-flatten.elements.distributions}
+                            </distributionManagement>
+                            <repositories>${maven-flatten.elements.repositories}</repositories>
+                        </pomElements>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>flatten</id>
+                            <phase>process-resources</phase>
+                            <goals>
+                                <goal>flatten</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>build-helper-maven-plugin</artifactId>
+                    <version>${maven-flatten-build.version}</version>
+                    <executions>
+                        <execution>
+                            <id>set-version</id>
+                            <phase>validate</phase>
+                            <goals>
+                                <goal>parse-version</goal>
+                            </goals>
+                            <configuration>
+                                <versionProperty>pivotal-cloud.version</versionProperty>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
             </plugins>
         </pluginManagement>
+        <plugins>
+            <!--spring-boot-maven项目打包插件-->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <!--flatten-maven-plugin项目打包插件-->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>flatten-maven-plugin</artifactId>
+            </plugin>
+            <!--flatten-maven-build项目打包插件-->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
     </build>
 
 

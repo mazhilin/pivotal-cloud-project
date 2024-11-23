@@ -72,3 +72,4 @@ build.txt
 *.xml.versionsBackup
 *.swp
 
+.flattened-pom.xml
