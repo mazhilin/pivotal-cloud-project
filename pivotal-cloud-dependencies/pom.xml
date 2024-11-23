@@ -28,7 +28,7 @@
     </developers>
 
     <scm>
-        <url>https://github.com/mazhilin/pivotal-cloud-dependencies</url>
+        <url>https://github.com/mazhilin/pivotal-cloud-project/pivotal-cloud-dependencies</url>
     </scm>
 
     <properties>

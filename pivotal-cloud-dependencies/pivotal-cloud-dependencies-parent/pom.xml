@@ -12,7 +12,7 @@
 
     <groupId>com.pivotal.cloud</groupId>
     <artifactId>pivotal-cloud-dependencies-parent</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>${pivotal-cloud.version}</version>
     <name>pivotal-cloud-dependencies-parent</name>
     <description>Demo project for Spring Boot</description>
     <packaging>pom</packaging>
