@@ -13,7 +13,7 @@
     <artifactId>pivotal-cloud-dependencies-boot</artifactId>
     <version>${pivotal-cloud.version}</version>
     <name>pivotal-cloud-dependencies-boot</name>
-    <description>Demo project for Spring Boot</description>
+    <description>PivotalCloud :: Dependencies Boot Project</description>
     <packaging>pom</packaging>
 
 

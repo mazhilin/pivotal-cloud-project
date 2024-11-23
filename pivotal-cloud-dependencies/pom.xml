@@ -8,7 +8,7 @@
     <artifactId>pivotal-cloud-dependencies</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>pivotal-cloud-dependencies</name>
-    <description>PivotalCloud云服务外部依赖管理</description>
+    <description>PivotalCloud云服务应用平台 :: Dependencies Project</description>
     <packaging>pom</packaging>
 
     <licenses>
@@ -44,10 +44,10 @@
         <javaformat-plugin.version>0.0.23</javaformat-plugin.version>
         <docker-plugin.version>0.33.0</docker-plugin.version>
 
-        <!--project base dependencies -->
+        <!--Project Base dependencies -->
         <spring-boot.version>2.7.18</spring-boot.version>
         <lombok.version>1.18.20</lombok.version>
-        <mapstruct.version>1.5.0.Beta1</mapstruct.version>
+        <mapstruct.version>1.6.3</mapstruct.version>
         <pivotal-cloud.version>0.0.1-SNAPSHOT</pivotal-cloud.version>
 
         <!--Maven Base plugins-->
@@ -57,6 +57,8 @@
         <maven-jar-plugin.verison>3.4.2</maven-jar-plugin.verison>
         <maven-war-plugin.verison>3.4.0</maven-war-plugin.verison>
         <maven-lombok-plugin.version>1.18.20.0</maven-lombok-plugin.version>
+
+        <!--Git Base plugins-->
         <git-commit.version>4.9.10</git-commit.version>
 
         <!--Spring Boot Maven plugins -->
