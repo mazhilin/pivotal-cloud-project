@@ -1,11 +1,13 @@
 ######################################################################
 # Build Tools
-
+# Gradleignore
 .gradle
 /build/
 !gradle/wrapper/gradle-wrapper.jar
 
+# Maven ignore
 target/
+!.mvn/wrapper/*
 !.mvn/wrapper/maven-wrapper.jar
 
 ######################################################################
@@ -25,6 +27,9 @@ target/
 *.iml
 *.ipr
 
+# eclipse ignore
+.settings/
+
 ### NetBeans ###
 nbproject/private/
 build/*
@@ -34,9 +39,35 @@ nbdist/
 .nb-gradle/
 data/
 
-######################################################################
+# system ignore
+.DS_Store
+Thumbs.db
+*.orig
+
+# flatten ignore
+.flattened-pom.xml
+
+# license check result
+license-list
+
+# grpc compiler
+compiler/gradle.properties
+compiler/build/*
+compiler/.gradle/*
+
+# Tomcat
+.extract
+.java-version
+
 # Others
+# temp ignore
 *.log
+*.cache
+*.diff
+*.patch
+*.tmp
+
+build.txt
 *.xml.versionsBackup
 *.swp
 
