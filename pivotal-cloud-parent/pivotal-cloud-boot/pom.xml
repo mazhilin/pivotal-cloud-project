@@ -11,7 +11,7 @@
     <artifactId>pivotal-cloud-boot</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>pivotal-cloud-boot</name>
-    <description>Demo project for Spring Boot</description>
+    <description>PivotalCloud :: Boot Base Project</description>
     <packaging>jar</packaging>
 
 

@@ -12,7 +12,7 @@
     </parent>
     <groupId>com.pivotal.cloud</groupId>
     <artifactId>pivotal-cloud-parent</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>${pivotal-cloud.version}</version>
     <name>pivotal-cloud-parent</name>
     <description>PivotalCloud :: Parent Base Project</description>
     <packaging>pom</packaging>
@@ -21,13 +21,17 @@
         <url>https://github.com/mazhilin/pivotal-cloud-project/pivotal-cloud-parent</url>
     </scm>
 
+    <properties>
+        <pivotal-cloud.version>0.0.1-SNAPSHOT</pivotal-cloud.version>
+    </properties>
+
 
     <modules>
         <module>pivotal-cloud-boot</module>
+        <module>pivotal-cloud-common</module>
         <module>pivotal-cloud-starter</module>
         <module>pivotal-cloud-toolkit</module>
     </modules>
-
 
 
 </project>

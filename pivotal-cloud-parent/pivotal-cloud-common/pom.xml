@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.pivotal.cloud</groupId>
+        <artifactId>pivotal-cloud-parent</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <groupId>com.pivotal.cloud</groupId>
+    <artifactId>pivotal-cloud-common</artifactId>
+    <version>${pivotal-cloud.version}</version>
+    <name>pivotal-cloud-common</name>
+    <description>PivotalCloud :: Common Base Project</description>
+    <packaging>pom</packaging>
+
+
+    <modules>
+        <module>pivotal-cloud-common-api</module>
+        <module>pivotal-cloud-common-base</module>
+        <module>pivotal-cloud-common-center</module>
+        <module>pivotal-cloud-common-domain</module>
+        <module>pivotal-cloud-common-web</module>
+    </modules>
+
+</project>

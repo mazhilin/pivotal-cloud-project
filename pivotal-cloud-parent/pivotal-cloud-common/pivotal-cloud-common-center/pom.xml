@@ -4,14 +4,14 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.pivotal.cloud</groupId>
-        <artifactId>pivotal-cloud-parent</artifactId>
+        <artifactId>pivotal-cloud-common</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.pivotal.cloud</groupId>
-    <artifactId>pivotal-cloud-starter</artifactId>
+    <artifactId>pivotal-cloud-common-center</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>pivotal-cloud-starter</name>
-    <description>PivotalCloud :: Starter Parent Project</description>
-    <packaging>pom</packaging>
+    <name>pivotal-cloud-common-center</name>
+    <description>PivotalCloud :: Common Center Project</description>
+    <packaging>jar</packaging>
 
 </project>
