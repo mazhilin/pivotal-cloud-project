@@ -14,4 +14,78 @@
     <description>Demo project for Spring Boot</description>
     <packaging>jar</packaging>
 
+
+    <dependencies>
+        <!-- hutool-core -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-core</artifactId>
+        </dependency>
+        <!-- hutool-aop -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-aop</artifactId>
+        </dependency>
+        <!-- hutool-extra -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-extra</artifactId>
+        </dependency>
+        <!-- hutool-jwt -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-cache</artifactId>
+        </dependency>
+        <!-- hutool-db -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-db</artifactId>
+        </dependency>
+        <!-- hutool-dfa -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-dfa</artifactId>
+        </dependency>
+        <!-- hutool-system -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-system</artifactId>
+        </dependency>
+        <!-- hutool-http -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-http</artifactId>
+        </dependency>
+        <!-- hutool-json -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-json</artifactId>
+        </dependency>
+        <!-- hutool-crypto -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-crypto</artifactId>
+        </dependency>
+        <!-- hutool-jwt -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-jwt</artifactId>
+        </dependency>
+        <!-- hutool-socket -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-socket</artifactId>
+        </dependency>
+        <!-- hutool-log -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-log</artifactId>
+        </dependency>
+        <!-- hutool-poi -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-poi</artifactId>
+        </dependency>
+    </dependencies>
+
 </project>

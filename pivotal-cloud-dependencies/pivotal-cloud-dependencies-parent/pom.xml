@@ -18,9 +18,62 @@
     <packaging>pom</packaging>
 
 
-    <build>
-        <finalName>${project.name}</finalName>
+    <properties>
+        <spring-framework.version>5.3.31</spring-framework.version>
+        <spring-boot.version>2.7.18</spring-boot.version>
+        <spring-cloud.version>2021.0.9</spring-cloud.version>
+        <spring-cloud-alibaba.version>2021.0.6.1</spring-cloud-alibaba.version>
+        <pivotal-cloud.version>0.0.1-SNAPSHOT</pivotal-cloud.version>
+    </properties>
 
+    <dependencyManagement>
+        <dependencies>
+            <!--SpringFramework依赖配置-->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-framework-bom</artifactId>
+                <version>${spring-framework.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- SpringBoot依赖配置-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!--SpringCloud依赖配置-->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!--SpringCloudAlibaba依赖配置-->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring-cloud-alibaba.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!--PivotalCloud依赖配置-->
+            <dependency>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-dependencies-boot</artifactId>
+                <version>${pivotal-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <!--定义全局统一打包项目名称-->
+        <finalName>${project.name}</finalName>
         <plugins>
             <!--spring-cloud-maven 插件-->
             <plugin>
@@ -42,7 +95,6 @@
                 <groupId>io.spring.javaformat</groupId>
                 <artifactId>spring-javaformat-maven-plugin</artifactId>
             </plugin>
-
         </plugins>
     </build>
 
