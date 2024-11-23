@@ -16,6 +16,12 @@
 
 
     <dependencies>
+
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+        </dependency>
+
         <!-- hutool-core -->
         <dependency>
             <groupId>cn.hutool</groupId>
