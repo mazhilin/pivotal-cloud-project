@@ -6,6 +6,6 @@
  * @author: Powered by Marklin
  * @datetime: 2024-11-23 19:35
  * @version:
- * @copyright: Copyright © 2018-2024  Systems Incorporated. All rights reserved.
+ * @copyright: Copyright © 2018-2024 Systems Incorporated. All rights reserved.
  */
 package com.pivotal.cloud.boot;

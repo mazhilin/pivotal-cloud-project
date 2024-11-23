@@ -27,17 +27,20 @@
                 <groupId>group.springframework.plugin</groupId>
                 <artifactId>spring-cloud-maven-plugin</artifactId>
             </plugin>
-            <!--spring-boot-maven项目打包插件-->
+            <!--spring-boot-maven 插件-->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-
-
-            <!--flatten-maven-plugin项目打包插件-->
+            <!--flatten-maven-plugin 插件-->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>flatten-maven-plugin</artifactId>
+            </plugin>
+            <!--spring-maven-format 插件-->
+            <plugin>
+                <groupId>io.spring.javaformat</groupId>
+                <artifactId>spring-javaformat-maven-plugin</artifactId>
             </plugin>
 
         </plugins>
