@@ -46,7 +46,6 @@ Thumbs.db
 
 # flatten ignore
 .flattened-pom.xml
-!.flattened-*.xml
 
 # license check result
 license-list
