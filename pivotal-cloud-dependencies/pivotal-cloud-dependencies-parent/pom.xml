@@ -36,6 +36,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
             <!-- SpringBoot依赖配置-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -44,6 +45,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
             <!--SpringCloud依赖配置-->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
@@ -52,6 +54,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
             <!--SpringCloudAlibaba依赖配置-->
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
@@ -60,6 +63,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
             <!--PivotalCloud依赖配置-->
             <dependency>
                 <groupId>com.pivotal.cloud</groupId>
@@ -72,8 +76,10 @@
     </dependencyManagement>
 
     <build>
-        <!--定义全局统一打包项目名称-->
+        <!--[1].定义全局统一项目名称-->
         <finalName>${project.name}</finalName>
+
+        <!--[2].定义全局统一打包插件-->
         <plugins>
             <!--spring-cloud-maven 插件-->
             <plugin>
@@ -96,6 +102,28 @@
                 <artifactId>spring-javaformat-maven-plugin</artifactId>
             </plugin>
         </plugins>
+
+        <!--[3].定义全局统一资源目录-->
+        <resources>
+            <resource>
+                <directory>${basedir}/src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                    <include>**/application*.yml</include>
+                    <include>**/application*.yaml</include>
+                    <include>**/application*.properties</include>
+                </includes>
+            </resource>
+            <resource>
+                <directory>${basedir}/src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>**/*</include>
+                </includes>
+            </resource>
+        </resources>
     </build>
 
 </project>
