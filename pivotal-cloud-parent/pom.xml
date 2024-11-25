@@ -29,6 +29,7 @@
     <modules>
         <module>pivotal-cloud-boot</module>
         <module>pivotal-cloud-common</module>
+        <module>pivotal-cloud-coverage</module>
         <module>pivotal-cloud-devops</module>
         <module>pivotal-cloud-starter</module>
         <module>pivotal-cloud-toolkit</module>

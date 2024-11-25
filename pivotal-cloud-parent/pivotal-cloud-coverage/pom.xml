@@ -9,12 +9,11 @@
         <artifactId>pivotal-cloud-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-
     <groupId>com.pivotal.cloud</groupId>
-    <artifactId>pivotal-cloud-devops</artifactId>
+    <artifactId>pivotal-cloud-coverage</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>pivotal-cloud-devops</name>
-    <description>PivotalCloud :: Devops Base Project</description>
+    <name>pivotal-cloud-coverage</name>
+    <description>PivotalCloud :: Coverage Base Project</description>
     <packaging>pom</packaging>
 
 </project>
