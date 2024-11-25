@@ -31,7 +31,9 @@ public interface Templates {
      */
     String STRINGS = "Strings";
 
-
+    /**
+     * 模板引擎
+     */
     interface Engine {
         /**
          * Freemarker模板
