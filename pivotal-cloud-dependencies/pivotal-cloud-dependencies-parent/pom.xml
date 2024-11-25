@@ -72,6 +72,15 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+            <!--PivotalCloud依赖配置-->
+            <dependency>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-dependencies-starter</artifactId>
+                <version>${pivotal-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
