@@ -35,78 +35,188 @@
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-aop</artifactId>
                 <version>${hutool.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>cn.hutool</groupId>
+                        <artifactId>hutool-core</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <!-- hutool-extra -->
             <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-extra</artifactId>
                 <version>${hutool.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>cn.hutool</groupId>
+                        <artifactId>hutool-core</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>cn.hutool</groupId>
+                        <artifactId>hutool-log</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <!-- hutool-jwt -->
             <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-cache</artifactId>
                 <version>${hutool.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>cn.hutool</groupId>
+                        <artifactId>hutool-core</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <!-- hutool-db -->
             <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-db</artifactId>
                 <version>${hutool.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>cn.hutool</groupId>
+                        <artifactId>hutool-core</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>cn.hutool</groupId>
+                        <artifactId>hutool-setting</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>cn.hutool</groupId>
+                        <artifactId>hutool-log</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <!-- hutool-dfa -->
             <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-dfa</artifactId>
                 <version>${hutool.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>cn.hutool</groupId>
+                        <artifactId>hutool-core</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>cn.hutool</groupId>
+                        <artifactId>hutool-json</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <!-- hutool-system -->
             <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-system</artifactId>
                 <version>${hutool.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>cn.hutool</groupId>
+                        <artifactId>hutool-core</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <!-- hutool-http -->
             <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-http</artifactId>
                 <version>${hutool.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>cn.hutool</groupId>
+                        <artifactId>hutool-core</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <!-- hutool-json -->
             <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-json</artifactId>
                 <version>${hutool.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>cn.hutool</groupId>
+                        <artifactId>hutool-core</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <!-- hutool-crypto -->
             <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-crypto</artifactId>
                 <version>${hutool.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>cn.hutool</groupId>
+                        <artifactId>hutool-core</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <!-- hutool-jwt -->
             <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-jwt</artifactId>
                 <version>${hutool.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>cn.hutool</groupId>
+                        <artifactId>hutool-core</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>cn.hutool</groupId>
+                        <artifactId>hutool-json</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>cn.hutool</groupId>
+                        <artifactId>hutool-crypto</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <!-- hutool-socket -->
             <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-socket</artifactId>
                 <version>${hutool.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>cn.hutool</groupId>
+                        <artifactId>hutool-core</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>cn.hutool</groupId>
+                        <artifactId>hutool-log</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <!-- hutool-log -->
             <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-log</artifactId>
                 <version>${hutool.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>cn.hutool</groupId>
+                        <artifactId>hutool-core</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <!-- hutool-poi -->
             <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-poi</artifactId>
                 <version>${hutool.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>cn.hutool</groupId>
+                        <artifactId>hutool-core</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>cn.hutool</groupId>
+                        <artifactId>hutool-log</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
         </dependencies>
     </dependencyManagement>
