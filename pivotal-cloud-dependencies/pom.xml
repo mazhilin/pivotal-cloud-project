@@ -89,6 +89,8 @@
         <module>pivotal-cloud-dependencies-parent</module>
         <!--PivotalCloud云服务统一依赖Starter工程-->
         <module>pivotal-cloud-dependencies-starter</module>
+        <!--PivotalCloud云服务统一父级Starter工程-->
+        <module>pivotal-cloud-starter-parent</module>
     </modules>
 
     <build>
