@@ -6,22 +6,14 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.pivotal.cloud</groupId>
-        <artifactId>pivotal-cloud-parent</artifactId>
+        <artifactId>pivotal-cloud-coverage</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.pivotal.cloud</groupId>
-    <artifactId>pivotal-cloud-coverage</artifactId>
+    <artifactId>pivotal-cloud-coverage-boot</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>pivotal-cloud-coverage</name>
-    <description>PivotalCloud :: Coverage Base Project</description>
-    <packaging>pom</packaging>
-
-
-    <modules>
-        <module>pivotal-cloud-coverage-boot</module>
-        <module>pivotal-cloud-coverage-audit</module>
-        <module>pivotal-cloud-coverage-feign</module>
-        <module>pivotal-cloud-coverage-grayscale</module>
-    </modules>
+    <name>pivotal-cloud-coverage-boot</name>
+    <description>PivotalCloud :: Coverage Boot Project</description>
+    <packaging>jar</packaging>
 
 </project>
