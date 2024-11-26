@@ -20,6 +20,7 @@
     <properties>
         <pivotal-cloud.version>0.0.1-SNAPSHOT</pivotal-cloud.version>
         <hutool.version>5.8.33</hutool.version>
+        <jackson.version>2.13.5</jackson.version>
     </properties>
 
     <dependencyManagement>
@@ -219,6 +220,20 @@
                     </exclusion>
                 </exclusions>
             </dependency>
+
+            <!--jackson-modules-->
+            <dependency>
+                <groupId>com.fasterxml.jackson.datatype</groupId>
+                <artifactId>jackson-datatype-jdk8</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.fasterxml.jackson.module</groupId>
+                <artifactId>jackson-module-parameter-names</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
