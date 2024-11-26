@@ -11,7 +11,7 @@
     <artifactId>pivotal-cloud-toolkit</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>pivotal-cloud-toolkit</name>
-    <description>Demo project for Spring Boot</description>
+    <description>PivotalCloud :: Toolkit Parent Project</description>
     <packaging>pom</packaging>
 
 

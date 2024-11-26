@@ -11,7 +11,7 @@
     <artifactId>pivotal-cloud-middleware</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>pivotal-cloud-middleware</name>
-    <description>Demo project for Spring Boot</description>
-
+    <description>PivotalCloud :: Middleware Parent Project</description>
+    <packaging>pom</packaging>
 
 </project>

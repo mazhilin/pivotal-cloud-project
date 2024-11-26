@@ -11,7 +11,7 @@
     </parent>
     <groupId>com.pivotal.cloud</groupId>
     <artifactId>pivotal-cloud-parent</artifactId>
-    <version>${pivotal-cloud.version}</version>
+    <version>0.0.1-SNAPSHOT</version>
     <name>pivotal-cloud-parent</name>
     <description>PivotalCloud :: Parent Base Project</description>
     <packaging>pom</packaging>
@@ -25,10 +25,72 @@
     </properties>
 
 
+    <dependencyManagement>
+        <dependencies>
+            <!--SpringFramework依赖配置-->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-framework-bom</artifactId>
+                <version>${spring-framework.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
 
+            <!-- SpringBoot依赖配置-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
 
+            <!--SpringCloud依赖配置-->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
 
+            <!--SpringCloudAlibaba依赖配置-->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring-cloud-alibaba.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
 
+            <!--PivotalCloud依赖配置-->
+            <dependency>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-dependencies-boot</artifactId>
+                <version>${pivotal-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!--PivotalCloud依赖配置-->
+            <dependency>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-dependencies-parent</artifactId>
+                <version>${pivotal-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!--PivotalCloud依赖配置-->
+            <dependency>
+                <groupId>com.pivotal.cloud</groupId>
+                <artifactId>pivotal-cloud-dependencies-starter</artifactId>
+                <version>${pivotal-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
     <modules>
         <module>pivotal-cloud-boot</module>
         <module>pivotal-cloud-common</module>

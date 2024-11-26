@@ -414,6 +414,13 @@
                     <artifactId>build-helper-maven-plugin</artifactId>
                     <version>${maven-flatten-build.version}</version>
                 </plugin>
+
+                <!--maven-flatten-verison插件配置-->
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>versions-maven-plugin</artifactId>
+                    <version>${maven-flatten-verisons.version}</version>
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>

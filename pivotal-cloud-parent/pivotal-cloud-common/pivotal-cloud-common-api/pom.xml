@@ -9,7 +9,7 @@
     </parent>
     <groupId>com.pivotal.cloud</groupId>
     <artifactId>pivotal-cloud-common-api</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>${pivotal-cloud.version}</version>
     <name>pivotal-cloud-common-api</name>
     <description>PivotalCloud :: Common API Project</description>
     <packaging>jar</packaging>

@@ -11,7 +11,8 @@
     <artifactId>pivotal-cloud-component</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>pivotal-cloud-component</name>
-    <description>Demo project for Spring Boot</description>
+    <description>PivotalCloud :: Component Parent Project</description>
+    <packaging>pom</packaging>
 
 
 </project>
