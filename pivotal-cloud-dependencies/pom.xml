@@ -399,6 +399,13 @@
                             </configuration>
                         </execution>
                         <execution>
+                            <id>flatten.generate</id>
+                            <phase>generate-resources</phase>
+                            <goals>
+                                <goal>flatten</goal>
+                            </goals>
+                        </execution>
+                        <execution>
                             <id>flatten.clean</id>
                             <phase>clean</phase>
                             <goals>
