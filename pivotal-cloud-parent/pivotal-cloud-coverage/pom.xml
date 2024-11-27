@@ -22,6 +22,7 @@
         <module>pivotal-cloud-coverage-audit</module>
         <module>pivotal-cloud-coverage-feign</module>
         <module>pivotal-cloud-coverage-grayscale</module>
+        <module>pivotal-cloud-coverage-logger</module>
     </modules>
 
 </project>
