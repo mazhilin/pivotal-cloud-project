@@ -19,6 +19,7 @@
         <module>pivotal-cloud-starter-boot</module>
         <module>pivotal-cloud-starter-redis</module>
         <module>pivotal-cloud-starter-redisson</module>
+        <module>pivotal-cloud-starter-security</module>
     </modules>
 
 </project>
