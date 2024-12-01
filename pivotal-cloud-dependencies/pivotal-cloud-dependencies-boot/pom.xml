@@ -21,6 +21,11 @@
         <pivotal-cloud.version>0.0.1-SNAPSHOT</pivotal-cloud.version>
         <hutool.version>5.8.33</hutool.version>
         <jackson.version>2.13.5</jackson.version>
+        <!--mybatis相关-->
+        <mybatis.version>3.5.16</mybatis.version>
+        <mybatis-plus.version>3.5.6</mybatis-plus.version>
+        <mybatis-plus-join.version>1.4.10</mybatis-plus-join.version>
+        <mybatis-mate.version>1.0.18</mybatis-mate.version>
     </properties>
 
     <dependencyManagement>
@@ -232,6 +237,37 @@
                 <groupId>com.fasterxml.jackson.module</groupId>
                 <artifactId>jackson-module-parameter-names</artifactId>
                 <version>${jackson.version}</version>
+            </dependency>
+
+            <!--mybatis plus 模块配置开始-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-extension</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-annotation</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-mate-annotation</artifactId>
+                <version>${mybatis-mate.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
             </dependency>
 
         </dependencies>
