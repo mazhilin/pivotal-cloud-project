@@ -16,4 +16,8 @@
     <description>PivotalCloud :: Starter Mybatis Project</description>
     <packaging>jar</packaging>
 
+    <dependencies>
+
+    </dependencies>
+
 </project>

@@ -29,6 +29,13 @@
             <artifactId>aspectjrt</artifactId>
         </dependency>
 
+        <!--spring-mvc 依赖配置-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
         <!--jackson-modules-->
         <dependency>
             <groupId>com.fasterxml.jackson.datatype</groupId>
