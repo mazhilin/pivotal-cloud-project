@@ -6,6 +6,7 @@
         <groupId>com.pivotal.cloud</groupId>
         <artifactId>pivotal-cloud-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <groupId>com.pivotal.cloud</groupId>
     <artifactId>pivotal-cloud-boot</artifactId>
@@ -34,6 +35,15 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
             <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
         </dependency>
 
         <!--jackson-modules-->

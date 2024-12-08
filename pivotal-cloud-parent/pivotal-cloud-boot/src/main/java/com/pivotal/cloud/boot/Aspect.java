@@ -1,9 +1,10 @@
 package com.pivotal.cloud.boot;
 
-import com.sun.org.slf4j.internal.Logger;
-import com.sun.org.slf4j.internal.LoggerFactory;
+
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.core.Ordered;
 
 /**
@@ -17,14 +18,21 @@ import org.springframework.core.Ordered;
  * @copyright: Copyright © 2018-2024 PivotalCloud Systems Incorporated. All rights reserved.
  */
 public interface Aspect extends Ordered {
+    /**
+     * 应用日志门面
+     */
     Logger logger = LoggerFactory.getLogger(Aspect.class);
 
     /**
      * 切面环绕通知-@Around
      *
-     * @param point 切入点
+     * @param point
+     *         切入点
+     *
      * @return 返回结果
-     * @throws Throwable 异常消息
+     *
+     * @throws Throwable
+     *         异常消息
      */
     default Object aspectAround(ProceedingJoinPoint point) throws Throwable {
         return null;
