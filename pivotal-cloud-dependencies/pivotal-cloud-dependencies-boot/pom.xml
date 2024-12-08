@@ -26,10 +26,18 @@
         <mybatis-plus.version>3.5.6</mybatis-plus.version>
         <mybatis-plus-join.version>1.4.10</mybatis-plus-join.version>
         <mybatis-mate.version>1.0.18</mybatis-mate.version>
+        <guava.version>31.0.1-jre</guava.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+
+            <!--google-guava模块-->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
             <!--Hutool依赖配置 -->
             <!-- hutool-core -->
             <dependency>
