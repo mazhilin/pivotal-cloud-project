@@ -14,4 +14,17 @@
     <description>PivotalCloud :: Framework Base Project</description>
     <packaging>pom</packaging>
 
+
+
+    <modules>
+        <module>pivotal-cloud-datasource</module>
+        <module>pivotal-cloud-datacache</module>
+        <module>pivotal-cloud-security</module>
+        <module>pivotal-cloud-shiro</module>
+        <module>pivotal-cloud-integrate</module>
+        <module>pivotal-cloud-protocol</module>
+        <module>pivotal-cloud-social</module>
+        <module>pivotal-cloud-sso</module>
+    </modules>
+
 </project>

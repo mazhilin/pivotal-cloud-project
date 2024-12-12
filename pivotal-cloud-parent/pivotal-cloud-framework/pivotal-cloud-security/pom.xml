@@ -4,24 +4,18 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.pivotal.cloud</groupId>
-        <artifactId>pivotal-cloud-parent</artifactId>
+        <artifactId>pivotal-cloud-framework</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.pivotal.cloud</groupId>
-    <artifactId>pivotal-cloud-starter</artifactId>
+    <artifactId>pivotal-cloud-security</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>pivotal-cloud-starter</name>
-    <description>PivotalCloud :: Starter Parent Project</description>
+    <name>pivotal-cloud-security</name>
+    <description>PivotalCloud :: Framework Security Project</description>
     <packaging>pom</packaging>
 
-
     <modules>
-        <module>pivotal-cloud-starter-boot</module>
-        <module>pivotal-cloud-starter-mybatis</module>
-        <module>pivotal-cloud-starter-redis</module>
-        <module>pivotal-cloud-starter-redisson</module>
-        <module>pivotal-cloud-starter-security</module>
-        <module>pivotal-cloud-starter-shiro</module>
+        <module>pivotal-cloud-security-boot</module>
     </modules>
 
 </project>

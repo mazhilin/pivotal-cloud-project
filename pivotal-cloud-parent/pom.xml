@@ -102,7 +102,6 @@
         <module>pivotal-cloud-middleware</module>
         <module>pivotal-cloud-starter</module>
         <module>pivotal-cloud-toolkit</module>
-
     </modules>
 
 
