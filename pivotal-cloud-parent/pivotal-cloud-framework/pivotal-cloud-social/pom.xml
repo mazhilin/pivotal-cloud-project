@@ -17,6 +17,8 @@
 
     <modules>
         <module>pivotal-cloud-social-boot</module>
+        <module>pivotal-cloud-social-feishu</module>
+        <module>pivotal-cloud-social-wechat</module>
     </modules>
 
 </project>

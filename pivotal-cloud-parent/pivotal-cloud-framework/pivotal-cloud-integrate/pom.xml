@@ -14,4 +14,9 @@
     <description>Demo project for Spring Boot</description>
     <packaging>pom</packaging>
 
+    <modules>
+        <module>pivotal-cloud-integrate-boot</module>
+        <module>pivotal-cloud-integrate-feishu</module>
+        <module>pivotal-cloud-integrate-wechat</module>
+    </modules>
 </project>

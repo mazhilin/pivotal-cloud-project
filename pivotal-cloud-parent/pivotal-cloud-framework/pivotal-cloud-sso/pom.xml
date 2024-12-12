@@ -14,4 +14,11 @@
     <description>Demo project for Spring Boot</description>
     <packaging>pom</packaging>
 
+    <modules>
+        <module>pivotal-cloud-sso-boot</module>
+        <module>pivotal-cloud-sso-cas</module>
+        <module>pivotal-cloud-sso-oauth</module>
+        <module>pivotal-cloud-sso-saml</module>
+    </modules>
+
 </project>
